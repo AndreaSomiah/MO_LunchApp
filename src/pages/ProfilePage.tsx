@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { AvatarPicker } from '@/components/profile/AvatarPicker';
 import { DietarySelect } from '@/components/profile/DietarySelect';
 import { useAuth } from '@/hooks/useAuth';
-import { updateProfile } from '@/api/profileApi';
+import { updateProfile, type ProfilePatch } from '@/api/profileApi';
 import { avatarById, avatarDefaultBg } from '@/data/avatarOptions';
 import type { DietaryPreference } from '@/types/user';
 
@@ -48,7 +48,7 @@ export const ProfilePage = (): JSX.Element => {
   };
 
   const mutation = useMutation({
-    mutationFn: () => updateProfile({ name: name.trim(), avatarId, dietary }),
+    mutationFn: () => updateProfile({ name: name.trim(), avatarId: avatarId as ProfilePatch['avatarId'], dietary }),
     onSuccess: () => {
       toast.success('Profile updated');
       qc.invalidateQueries({ queryKey: ['auth-user'] });
