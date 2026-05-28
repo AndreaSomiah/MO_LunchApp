@@ -1,0 +1,75 @@
+:root {
+  --rra-navy: #0B2B63;
+  --rra-orange: #F58220;
+  --rra-cream: #F5F3EE;
+  --rra-slate: #6B7280;
+  --rra-white: #FFFFFF;
+}
+
+/* Logo wrapper: intentionally NO background card. */
+.rra-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  line-height: 1;
+  background: transparent;
+}
+
+.rra-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* better sizes for real UI */
+.rra-logo--sm { width: 84px; }
+.rra-logo--md { width: 116px; }
+.rra-logo--lg { width: 180px; }
+.rra-logo--xl { width: 260px; }
+
+.rra-logo--icon.rra-logo--sm { width: 24px; }
+.rra-logo--icon.rra-logo--md { width: 34px; }
+.rra-logo--icon.rra-logo--lg { width: 48px; }
+.rra-logo--icon.rra-logo--xl { width: 64px; }
+
+.rra-sidebar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  min-height: 56px;
+  background: transparent;
+}
+
+.rra-logo--icon.rra-logo--sm { width: 24px; }
+.rra-logo--icon.rra-logo--md { width: 34px; }
+.rra-logo--icon.rra-logo--lg { width: 48px; }
+.rra-logo--icon.rra-logo--xl { width: 64px; }
+
+.rra-sidebar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  min-height: 56px;
+  background: transparent;
+}
+
+.rra-brand-surface {
+  background: var(--rra-cream);
+  color: var(--rra-navy);
+}
+
+.rra-brand-surface-dark {
+  background: var(--rra-navy);
+  color: var(--rra-white);
+}
+
+.rra-brand-accent {
+  background: var(--rra-orange);
+  color: var(--rra-navy);
+}

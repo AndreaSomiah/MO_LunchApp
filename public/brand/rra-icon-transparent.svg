@@ -1,0 +1,12 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">RRA icon mark</title>
+<desc id="desc">RRA icon</desc>
+<path d="M13 61C13 41.7 28.7 26 48 26C67.3 26 83 41.7 83 61" stroke="#0B2B63" stroke-width="8" stroke-linecap="round"/>
+<path d="M22 64H74" stroke="#0B2B63" stroke-width="7" stroke-linecap="round"/>
+<path d="M30 60C30 47.1 38.1 38.5 48 38.5C57.9 38.5 66 47.1 66 60H30Z" fill="#F58220"/>
+<circle cx="48" cy="37" r="3.4" fill="#F58220"/>
+<path d="M31 71C37.2 79.2 58.8 79.2 65 71" fill="#0B2B63"/>
+<path d="M48 16V28" stroke="#F58220" stroke-width="6" stroke-linecap="round"/>
+<path d="M31 21L25 31" stroke="#F58220" stroke-width="6" stroke-linecap="round"/>
+<path d="M65 21L71 31" stroke="#F58220" stroke-width="6" stroke-linecap="round"/>
+</svg>

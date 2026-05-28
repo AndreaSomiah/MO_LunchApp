@@ -1,0 +1,15 @@
+// Compatibility shim. The Express backend has been replaced by Supabase, so
+// this module exists only to keep imports of `ApiError` from older code working.
+// All real network calls now go through `@/lib/supabase`.
+
+export class ApiError extends Error {
+  public readonly status: number;
+  public readonly payload: unknown;
+
+  constructor(status: number, message: string, payload: unknown = null) {
+    super(message);
+    this.status = status;
+    this.payload = payload;
+  }
+}
+

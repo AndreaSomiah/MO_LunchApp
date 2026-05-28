@@ -1,0 +1,13 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">RRA app icon</title>
+<desc id="desc">RRA icon mark on navy background</desc>
+<rect width="256" height="256" rx="56" fill="#0B2B63"/>
+<path d="M50 150C50 106.9 84.9 72 128 72C171.1 72 206 106.9 206 150" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+<path d="M76 154H180" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>
+<path d="M88 145C88 116.8 105.9 98 128 98C150.1 98 168 116.8 168 145H88Z" fill="#F58220"/>
+<circle cx="128" cy="95" r="8" fill="#F58220"/>
+<path d="M92 170C106 188 150 188 164 170" fill="#FFFFFF"/>
+<path d="M128 45V66" stroke="#F58220" stroke-width="12" stroke-linecap="round"/>
+<path d="M93 55L82 73" stroke="#F58220" stroke-width="12" stroke-linecap="round"/>
+<path d="M163 55L174 73" stroke="#F58220" stroke-width="12" stroke-linecap="round"/>
+</svg>
