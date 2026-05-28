@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { useCart, type CartContextValue } from '@/hooks/useCart';
+import { useCart } from '@/hooks/useCart';
+import type { CartContextValue } from '@/context/CartContext';
 import { useSettings } from '@/hooks/useSettings';
 import { formatCurrency } from '@/lib/formatCurrency';
 import type { CartLine } from '@/context/CartContext';

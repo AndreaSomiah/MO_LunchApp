@@ -181,7 +181,7 @@ export const SupplyOrderForm = ({ open, onClose, type, initial }: Props): JSX.El
       const target = idx + dir;
       if (idx < 0 || target < 0 || target >= prev.length) return prev;
       const next = prev.slice();
-      [next[idx], next[target]] = [next[target], next[idx]];
+      [next[idx]!, next[target]!] = [next[target]!, next[idx]!];
       return next;
     });
   };

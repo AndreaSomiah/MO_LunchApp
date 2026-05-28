@@ -54,8 +54,8 @@ export const categoryMeta = (c: Vibe['category']): { label: string; emoji: strin
 export const pickDailyVibe = (seed: Date = new Date()): Vibe => {
   // Stable pick per day so the dashboard does not flicker between renders.
   const dayKey = Number(`${seed.getFullYear()}${seed.getMonth() + 1}${seed.getDate()}`);
-  return DAILY_VIBES[dayKey % DAILY_VIBES.length];
+  return DAILY_VIBES[dayKey % DAILY_VIBES.length]!;
 };
 
 export const pickRandomVibe = (): Vibe =>
-  DAILY_VIBES[Math.floor(Math.random() * DAILY_VIBES.length)];
+  DAILY_VIBES[Math.floor(Math.random() * DAILY_VIBES.length)]!;

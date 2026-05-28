@@ -46,7 +46,7 @@ export const avatarEmoji = (id: string): string =>
 
 export const avatarDefaultBg = (id: string): string => {
   const animalIdx = AVATAR_ANIMALS.findIndex((a) => a.id === id);
-  if (animalIdx >= 0) return PASTEL_PALETTE[animalIdx];
+  if (animalIdx >= 0) return PASTEL_PALETTE[animalIdx]!;
   const foodIdx = AVATAR_FOOD.findIndex((a) => a.id === id);
-  return PASTEL_PALETTE[foodIdx >= 0 ? foodIdx : 0];
+  return PASTEL_PALETTE[foodIdx >= 0 ? foodIdx : 0]!;
 };

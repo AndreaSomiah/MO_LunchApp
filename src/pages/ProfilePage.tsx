@@ -21,7 +21,7 @@ const DIETARY_TAGLINE: Record<string, string> = {
 
 const dietaryTagline = (dietary: DietaryPreference[]): string => {
   if (dietary.length === 0) return 'Eats everything 🍽️';
-  return DIETARY_TAGLINE[dietary[0]] ?? 'Eats everything 🍽️';
+  return DIETARY_TAGLINE[dietary[0] ?? ''] ?? 'Eats everything 🍽️';
 };
 
 export const ProfilePage = (): JSX.Element => {
