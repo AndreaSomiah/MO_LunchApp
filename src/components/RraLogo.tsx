@@ -10,12 +10,12 @@ interface RraLogoProps {
 }
 
 const LOGO_MAP: Record<RraLogoVariant, string> = {
-  primary:         '/brand/rra-logo-primary-approved.png',
-  compact:         '/brand/rra-logo-compact-approved.png',
-  compactReversed: '/brand/rra-logo-compact-reversed-approved.png',
-  orange:          '/brand/rra-logo-orange-approved.png',
-  icon:            '/brand/rra-icon-approved.png',
-  appIcon:         '/brand/rra-app-icon-approved.png',
+  primary:         `${import.meta.env.BASE_URL}brand/rra-logo-primary-approved.png`,
+  compact:         `${import.meta.env.BASE_URL}brand/rra-logo-compact-approved.png`,
+  compactReversed: `${import.meta.env.BASE_URL}brand/rra-logo-compact-reversed-approved.png`,
+  orange:          `${import.meta.env.BASE_URL}brand/rra-logo-orange-approved.png`,
+  icon:            `${import.meta.env.BASE_URL}brand/rra-icon-approved.png`,
+  appIcon:         `${import.meta.env.BASE_URL}brand/rra-app-icon-approved.png`,
 };
 
 export const RraLogo = ({ variant = 'compact', size = 'md', className = '' }: RraLogoProps): JSX.Element => {
