@@ -56,7 +56,7 @@ export const TeamTable = ({ users, canEditRole, currentUserId }: Props): JSX.Ele
                   <Select
                     value={u.role}
                     onChange={(e) => mutation.mutate({ id: u.id, role: e.target.value as UserRole })}
-                    className="h-8 w-32"
+                    className="h-8 w-36"
                   >
                     <option value="employee">Employee</option>
                     <option value="manager">Manager</option>
