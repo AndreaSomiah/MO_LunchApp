@@ -308,16 +308,6 @@ const LandingPage = (): JSX.Element => {
           minHeight: '100vh',
         }}
       >
-        {/* 1. Logo */}
-        <div style={{ marginBottom: 24, width: '100%' }}>
-          <img
-            src={`${import.meta.env.BASE_URL}brand/orra-logo-reversed.png`}
-            alt="Orra — Workplace Ordering, Simplified"
-            style={{ width: '100%', maxWidth: 280, height: 'auto', display: 'block' }}
-            loading="eager"
-          />
-        </div>
-
         {/* 2+3. Stats + battle (flex-grow) */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
           <LeftPanelContent settings={settings} />
@@ -329,8 +319,8 @@ const LandingPage = (): JSX.Element => {
         </p>
       </aside>
 
-      {/* ── RIGHT PANEL (unchanged) ── */}
-      <main className="flex items-center justify-center p-6 sm:p-12">
+      {/* ── RIGHT PANEL ── */}
+      <main className="flex flex-col items-center justify-center p-6 sm:p-12 relative">
         <div className="w-full max-w-sm">
           <div className="mb-8 flex justify-center lg:hidden">
             <RraLogo variant="compact" size="lg" />
@@ -347,6 +337,15 @@ const LandingPage = (): JSX.Element => {
               <CreateAccountForm />
             </TabsContent>
           </Tabs>
+        </div>
+        {/* Logo bottom-right */}
+        <div className="absolute bottom-6 right-6">
+          <img
+            src={`${import.meta.env.BASE_URL}brand/orra-logo-full.png`}
+            alt="Orra"
+            style={{ height: 36, width: 'auto' }}
+            loading="eager"
+          />
         </div>
       </main>
     </div>
