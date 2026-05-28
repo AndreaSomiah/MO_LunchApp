@@ -309,8 +309,13 @@ const LandingPage = (): JSX.Element => {
         }}
       >
         {/* 1. Logo */}
-        <div style={{ marginBottom: 24 }}>
-          <RraLogo variant="compactReversed" size="xl" />
+        <div style={{ marginBottom: 24, width: '100%' }}>
+          <img
+            src={`${import.meta.env.BASE_URL}brand/orra-logo-reversed.png`}
+            alt="Orra — Workplace Ordering, Simplified"
+            style={{ width: '100%', maxWidth: 280, height: 'auto', display: 'block' }}
+            loading="eager"
+          />
         </div>
 
         {/* 2+3. Stats + battle (flex-grow) */}
